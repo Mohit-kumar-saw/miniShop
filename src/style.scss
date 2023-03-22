@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" );
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    h1{
+        font-size: 20px;
+        margin-left: 80px;
+    }
+    .search{
+        width: 40%;
+        height: 7vh;
+        border-radius: 20px;
+        padding-left: 25px;
+        font-size: 20px;
+        border: 1px solid lightgray;
+        
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 4px, rgba(17, 17, 26, 0.05) 0px 8px 32px;   
+        &::placeholder{
+            color: lightgrey;
+        }
+    }
+
+        .btn{
+            margin-top: 20px;
+            margin-right: 80px;
+            .cartBtn{
+                background: none;
+                border: none;
+                font-size: 40px;
+                position: relative;
+                
+
+                .navHeart{
+                    color: red;
+                    margin-right: 40px;
+                    position: relative;
+                    font-size: 34px;
+                }
+                
+                a{
+                    color: gray;
+                    z-index: -1;
+                    
+                }
+                .count1{
+                    position: absolute;
+                    margin-left: 30%;
+                    top: 0;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50px;
+                    font-size: 10px;
+                    width: 13px;
+                    padding: 2px;
+                    z-index: 1;
+                    
+                    
+                }
+                .count{
+                    position: absolute;
+                    margin-left: 90%;
+                    top: 0;
+                    background-color: rgba(78, 78, 250, 0.918);
+                    color: white;
+                    border-radius: 50px;
+                    font-size: 10px;
+                    width: 13px;
+                    padding: 2px;
+                    z-index: 1;
+                    
+                    
+                }
+            }
+            }
+        
+}
+
+.select{
+    font-weight: bold;
+    margin-left: 80px;
+    color: gray;
+
+    #category-select{
+        text-align: center;
+        border-radius: 20px;
+        // padding: 5px 9px 5px 9px;
+        padding: 5px;
+        border: none;
+        color: gray;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+}
+
+
+
+
+.main{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    margin-left: 50px; 
+
+    .card{
+        display: flex;
+        margin: 20px;
+        height: 200px;
+        width: 350px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 15px;
+        }
+
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .buttons{
+         display: flex;
+         align-items: center;
+         
+
+         .heartButton{
+            background: none;
+          border: none;
+          width: fit-content;
+          font-size: 20px;
+          color: rgba(255, 0, 0, 0.747);
+          
+         }
+      
+        .cartButton{
+          background: none;
+          border: none;
+          width: fit-content;
+          font-size: 25px;
+          color: gray;
+        }
+    }
+        
+    }
+}
+
+.searchHeading{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+
+.addToCart{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+    h2{
+        color: rgb(95, 93, 93);
+        margin-left: 80px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      .cartCard{
+        margin-left: 40px;
+        border: 1px solid gray;
+        width: 80%;
+        height: 113px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+        border: none;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                font-weight: bold;
+        color: rgb(83, 81, 81);
+
+
+        .quantity{
+            display: flex;
+            gap: 5px;
+            text-align: center;
+            position: relative;
+            .plus{
+                background-color: rgba(255, 0, 0, 0.478);
+                color: white;
+                width: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .minus{
+                background-color: rgba(0, 0, 255, 0.497);
+                color: white;
+                width: 20px;
+                border-radius: 5px;
+                cursor: pointer;
+
+            }
+        }
+
+        button{
+            background:none;
+            border: none;
+            color: rgb(90, 232, 90);
+            font-size: 30px;
+        }
+     }
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(103, 102, 102);
+    border: 1px solid lightgray;
+    width: 80%;
+    margin: auto;
+margin-top: 30px;
+padding: 30px;
+border-left: none;
+border-right: none;
+}
+}
